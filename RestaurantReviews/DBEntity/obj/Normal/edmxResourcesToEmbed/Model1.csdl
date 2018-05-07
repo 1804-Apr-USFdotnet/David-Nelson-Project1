@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RestaurantDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Restaurant">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Relations" Relationship="RestaurantDBModel.FK__Relation__Restau__3B75D760" FromRole="Restaurant" ToRole="Relation" />
+  </EntityType>
+  <EntityType Name="Review">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="RestaurantID" Type="Int32" />
+    <Property Name="Rating" Type="Int32" />
+    <NavigationProperty Name="Relations" Relationship="RestaurantDBModel.FK__Relation__Review__3A81B327" FromRole="Review" ToRole="Relation" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="RestaurantDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Restaurants" EntityType="Self.Restaurant" />
+    <EntitySet Name="Reviews" EntityType="Self.Review" />
+    <EntitySet Name="Relations" EntityType="RestaurantDBModel.Relation" />
+    <AssociationSet Name="FK__Relation__Restau__3B75D760" Association="RestaurantDBModel.FK__Relation__Restau__3B75D760">
+      <End Role="Restaurant" EntitySet="Restaurants" />
+      <End Role="Relation" EntitySet="Relations" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Relation__Review__3A81B327" Association="RestaurantDBModel.FK__Relation__Review__3A81B327">
+      <End Role="Review" EntitySet="Reviews" />
+      <End Role="Relation" EntitySet="Relations" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Relation">
+    <Key>
+      <PropertyRef Name="RelationID" />
+    </Key>
+    <Property Name="RelationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReviewID" Type="Int32" Nullable="false" />
+    <Property Name="RestaurantID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Restaurant" Relationship="RestaurantDBModel.FK__Relation__Restau__3B75D760" FromRole="Relation" ToRole="Restaurant" />
+    <NavigationProperty Name="Review" Relationship="RestaurantDBModel.FK__Relation__Review__3A81B327" FromRole="Relation" ToRole="Review" />
+  </EntityType>
+  <Association Name="FK__Relation__Restau__3B75D760">
+    <End Type="RestaurantDBModel.Restaurant" Role="Restaurant" Multiplicity="1" />
+    <End Type="RestaurantDBModel.Relation" Role="Relation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Restaurant">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Relation">
+        <PropertyRef Name="RestaurantID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Relation__Review__3A81B327">
+    <End Type="RestaurantDBModel.Review" Role="Review" Multiplicity="1" />
+    <End Type="RestaurantDBModel.Relation" Role="Relation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Review">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Relation">
+        <PropertyRef Name="ReviewID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,11 @@
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\bin\Debug\netcoreapp2.0\SerializeExample.deps.json
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\bin\Debug\netcoreapp2.0\SerializeExample.runtimeconfig.json
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\bin\Debug\netcoreapp2.0\SerializeExample.runtimeconfig.dev.json
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\bin\Debug\netcoreapp2.0\SerializeExample.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\bin\Debug\netcoreapp2.0\SerializeExample.pdb
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\obj\Debug\netcoreapp2.0\SerializeExample.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\obj\Debug\netcoreapp2.0\SerializeExample.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\obj\Debug\netcoreapp2.0\SerializeExample.AssemblyInfoInputs.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\obj\Debug\netcoreapp2.0\SerializeExample.AssemblyInfo.cs
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\obj\Debug\netcoreapp2.0\SerializeExample.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\SerializeExample\obj\Debug\netcoreapp2.0\SerializeExample.pdb

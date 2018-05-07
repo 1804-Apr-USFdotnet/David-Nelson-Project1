@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRestaurant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Restaurant>
+    <Name>YumYum</Name>
+    <IDnumber>00000</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>YumFood </Name>
+    <IDnumber>00001</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>YumSteaks</Name>
+    <IDnumber>00002</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>YumMEAT!</Name>
+    <IDnumber>00003</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>YumGreens</Name>
+    <IDnumber>00004</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Yummy Yum</Name>
+    <IDnumber>00005</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Yummy Food </Name>
+    <IDnumber>00006</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Yummy Steaks</Name>
+    <IDnumber>00007</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Yummy MEAT!</Name>
+    <IDnumber>00008</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Yummy Greens</Name>
+    <IDnumber>00009</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Edible-Yum</Name>
+    <IDnumber>00010</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Edible-Food </Name>
+    <IDnumber>00011</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Edible-Steaks</Name>
+    <IDnumber>00012</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Edible-MEAT!</Name>
+    <IDnumber>00013</IDnumber>
+  </Restaurant>
+  <Restaurant>
+    <Name>Edible-Greens</Name>
+    <IDnumber>00014</IDnumber>
+  </Restaurant>
+</ArrayOfRestaurant>

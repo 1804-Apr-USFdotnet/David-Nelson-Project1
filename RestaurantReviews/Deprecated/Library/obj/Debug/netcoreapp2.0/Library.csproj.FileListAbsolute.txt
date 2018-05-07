@@ -1,0 +1,12 @@
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\bin\Debug\netcoreapp2.0\Library.deps.json
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\bin\Debug\netcoreapp2.0\Library.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\bin\Debug\netcoreapp2.0\Library.pdb
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\bin\Debug\netcoreapp2.0\ObjectsNameSpace.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\bin\Debug\netcoreapp2.0\ObjectsNameSpace.pdb
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\obj\Debug\netcoreapp2.0\Library.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\obj\Debug\netcoreapp2.0\Library.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\obj\Debug\netcoreapp2.0\Library.AssemblyInfoInputs.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\obj\Debug\netcoreapp2.0\Library.AssemblyInfo.cs
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\obj\Debug\netcoreapp2.0\Library.csproj.CopyComplete
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\obj\Debug\netcoreapp2.0\Library.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\Library\obj\Debug\netcoreapp2.0\Library.pdb

@@ -1,0 +1,16 @@
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\RRObjects.dll.config
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\RRObjects.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\EntityFramework.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\EntityFramework.SqlServer.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\Google.Protobuf.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\MySql.Data.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\MySql.Data.Entity.EF6.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\EntityFramework.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\EntityFramework.SqlServer.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\Google.Protobuf.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\MySql.Data.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\bin\Normal\MySql.Data.Entity.EF6.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\obj\Normal\RRObjects.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\obj\Normal\RRObjects.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\obj\Normal\RRObjects.csproj.CopyComplete
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\RRObjects\obj\Normal\RRObjects.dll

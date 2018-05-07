@@ -1,0 +1,12 @@
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\bin\Debug\netcoreapp2.0\GenericObjects.deps.json
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\bin\Debug\netcoreapp2.0\GenericObjects.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\bin\Debug\netcoreapp2.0\GenericObjects.pdb
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\obj\Debug\netcoreapp2.0\GenericObjects.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\obj\Debug\netcoreapp2.0\GenericObjects.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\obj\Debug\netcoreapp2.0\GenericObjects.AssemblyInfoInputs.cache
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\obj\Debug\netcoreapp2.0\GenericObjects.AssemblyInfo.cs
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\obj\Debug\netcoreapp2.0\GenericObjects.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\obj\Debug\netcoreapp2.0\GenericObjects.pdb
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\bin\Debug\netcoreapp2.0\ObjectsNameSpace.dll
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\bin\Debug\netcoreapp2.0\ObjectsNameSpace.pdb
+C:\Users\David\Documents\Revature\DJNProjectZero\RestaurantReviews\GenericObjects\obj\Debug\netcoreapp2.0\GenericObjects.csproj.CopyComplete
