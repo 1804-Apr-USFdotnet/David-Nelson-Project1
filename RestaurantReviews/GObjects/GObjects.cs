@@ -136,11 +136,12 @@ namespace GObjects
             //reviewSerializer.DeserializeCollection("ReviewXML.xml", ReviewCollection);
             //restaurantSerializer.DeserializeCollection("RestaurantXML.xml", RestaurantCollection);
 
+
             RestaurantCollection.setList(access.getRestaurants());
             ReviewCollection.setList(access.getReviews());
 
             Console.WriteLine("*Top Three*");
-            Library.TopThree(ReviewCollection.getList(), RestaurantCollection.getList());
+            Library.DisplayAll(Library.TopThree(ReviewCollection.getList(), RestaurantCollection.getList()),0);
 
             Console.WriteLine("*Display All (Name Sort)*");
             Library.DisplayAll(RestaurantCollection.getList(),1);
@@ -152,7 +153,7 @@ namespace GObjects
             Library.DisplayReviews(ReviewCollection.getList(), RestaurantCollection[1]);
 
             Console.WriteLine("*Search for 'Nach'*");
-            Library.SearchRestaurants(RestaurantCollection.getList(), "nach");
+            Library.DisplayAll(Library.SearchRestaurants(RestaurantCollection.getList(), "nach"),0);
 
             Console.WriteLine("*Average rating of index 3*");
             Console.WriteLine(RestaurantCollection[2].Name + ": AvgRating: "

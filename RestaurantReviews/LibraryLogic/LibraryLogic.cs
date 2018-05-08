@@ -11,6 +11,7 @@ namespace LibraryLogic
 {
     public class Library
     {
+        private DataAccess Context;
         //Obsolete Code
         //List<Review> reviews = new List<Review>();
         //List<Restaurant> restaurants = new List<Restaurant>();
@@ -29,7 +30,17 @@ namespace LibraryLogic
 
         public Library()
         {
+            Context = new DataAccess();
+        }
 
+        public List<Review> ReturnReview()
+        {
+            return Context.getReviewsList();
+        }
+
+        public ArrayList ReturnRestaurant()
+        {
+            return Context.getRestaurants();
         }
 
 
@@ -44,7 +55,7 @@ namespace LibraryLogic
                 //Console.Write("Review for #" + element.RestaurantID);
                 if (b.ID == element.RestaurantID)
                 {
-                    Console.Write(element.Rating + " + ");
+                    //Console.Write(element.Rating + " + ");
                     sum += (int)element.Rating;
                     qauntity++;
                 }
@@ -103,13 +114,10 @@ namespace LibraryLogic
             return restList;
         }
 
-
-
         public void DisplayAll(ArrayList restaurant, int sort)
         {
             if (sort == 1)
                 restaurant = Namesort(restaurant);
-
 
             Console.WriteLine("-------------------------------");
             Console.WriteLine("ID | Name | Location ");
@@ -154,8 +162,6 @@ namespace LibraryLogic
             return temp;
         }
 
-
-
         //Search Restaurants (By partial name), display all matching results
         public ArrayList SearchRestaurants(ArrayList restaurant, string target)
         {
@@ -169,8 +175,7 @@ namespace LibraryLogic
                 {
                     found++;
                     match.Add(element);
-
-                } 
+                }
             }
             return match;
         }

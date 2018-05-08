@@ -4,12 +4,40 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Client.Models;
+using LibraryLogic;
+using DBEntity;
+
 
 namespace Client.Controllers
 {
     public class ReviewController : Controller
     {
-        private 
+        private Library library;
+
+        public ReviewController()
+        {
+            library = new Library();
+        }
+
+        public List<ReviewModel> convertReview(List<Review> RawReview)
+        {
+            List<ReviewModel> Review = new List<ReviewModel>();
+            ReviewModel newReview = new ReviewModel();
+
+            for (int i = 0; i < RawReview.Count; i++)
+            {
+                newReview = new ReviewModel();
+                newReview.ID = RawReview[i].ID;
+                newReview.Name = RawReview[i].Name;
+                newReview.Rating = (int)RawReview[i].Rating;
+                newReview.RestaurantID = (int)RawReview[i].RestaurantID;
+                newReview.text = RawReview[i].Text;
+                Review.Add(newReview);
+            }
+            return Review;
+        }
+
+
 
         // GET: Review
         public ActionResult Index()
@@ -19,23 +47,17 @@ namespace Client.Controllers
 
         public ActionResult ListReview()
         {
-
+            var rawreview = library.ReturnReview();
             List<ReviewModel> review = new List<ReviewModel>();
-            review.Add(new ReviewModel { Name = "David Nel", Rating = 17, RestaurantID = 14344, text = "To do" });
-            review.Add(new ReviewModel { Name = "Hata Pon", Rating = 1, RestaurantID = 11244, text = "Pata pon Don Chaka" });
-            review.Add(new ReviewModel { Name = "Fancy Pants", Rating = 3, RestaurantID = 15344, text = "To do dah" });
-            review.Add(new ReviewModel { Name = "Butz Klazer", Rating = 6, RestaurantID = 94282, text = "Mimiery" });
-
-
-
+            review = convertReview(rawreview);
             return View(review);
         }
 
-        [HttpPost]
-        public ActionResult CreateReview(NewReviewViewModel newReviewViewModel)
-        {
-            return View();
-        }
+        //[HttpPost]
+        //public ActionResult CreateReview(NewReviewViewModel newReviewViewModel)
+        //{
+        //    return View();
+        //}
 
         public ActionResult DeleteReview()
         {
