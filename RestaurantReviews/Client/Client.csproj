@@ -162,13 +162,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RestaurantsController.cs" />
-    <Compile Include="Controllers\ReviewController.cs" />
     <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\NewReviewViewModel.cs" />
-    <Compile Include="Models\ReviewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -208,10 +205,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Review\Index.cshtml" />
-    <Content Include="Views\Review\ListReview.cshtml" />
-    <Content Include="Views\Review\CreateReview.cshtml" />
-    <Content Include="Views\Review\DeleteView.cshtml" />
     <Content Include="Views\Restaurants\Create.cshtml" />
     <Content Include="Views\Restaurants\Delete.cshtml" />
     <Content Include="Views\Restaurants\Details.cshtml" />
@@ -222,9 +215,17 @@
     <Content Include="Views\Reviews\Details.cshtml" />
     <Content Include="Views\Reviews\Edit.cshtml" />
     <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\Restaurants\LocationOrder.cshtml" />
+    <Content Include="Views\Restaurants\Partial.cshtml" />
+    <Content Include="Views\Restaurants\Descending.cshtml" />
+    <Content Include="Views\Restaurants\Ascending.cshtml" />
+    <Content Include="Views\Reviews\Partial.cshtml" />
+    <Content Include="Views\Reviews\RestaurantReviews.cshtml" />
+    <Content Include="Views\Restaurants\TopThree.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

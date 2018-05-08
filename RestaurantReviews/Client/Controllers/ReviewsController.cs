@@ -20,6 +20,18 @@ namespace Client.Controllers
             return View(db.Reviews.ToList());
         }
 
+        public ActionResult RestaurantReviews(int id)
+        {
+            var reviewslist = from r in db.Reviews select r;
+
+            if (id != null)
+            {
+                reviewslist = reviewslist.Where(s => s.RestaurantID == (id));
+            }
+            return View(reviewslist.ToList());
+        }
+
+
         // GET: Reviews/Details/5
         public ActionResult Details(int? id)
         {

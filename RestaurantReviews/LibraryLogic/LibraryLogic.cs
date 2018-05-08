@@ -11,7 +11,6 @@ namespace LibraryLogic
 {
     public class Library
     {
-        private DataAccess Context;
         //Obsolete Code
         //List<Review> reviews = new List<Review>();
         //List<Restaurant> restaurants = new List<Restaurant>();
@@ -27,22 +26,6 @@ namespace LibraryLogic
         //    {
         //        restaurants.Add(new Restaurant());
         //    }
-
-        public Library()
-        {
-            Context = new DataAccess();
-        }
-
-        public List<Review> ReturnReview()
-        {
-            return Context.getReviewsList();
-        }
-
-        public ArrayList ReturnRestaurant()
-        {
-            return Context.getRestaurants();
-        }
-
 
         public double AverageRating(ArrayList reviews, Restaurant b)
         {
@@ -77,6 +60,49 @@ namespace LibraryLogic
             double[] tempaverage = new double[restaurantList.Count];
             int[] highest = new int[topX];
             ArrayList restList = new ArrayList();
+
+            if (topX > restaurantList.Count)
+                topX = restaurantList.Count;
+
+            //Sums and averages every restaurants individial ratings in a Double Array with corresponding index
+            for (int i = 0; i < restaurantList.Count; i++)
+            {
+                sum = 0;
+                tempaverage[i] = 0;
+                foreach (var segment in reviewList)
+                {
+                    if (((Review)segment).RestaurantID == ((Restaurant)restaurantList[i]).ID)
+                    {
+                        sum += (int)((Review)segment).Rating;
+                        tempaverage[i]++;
+                    }
+                }
+                tempaverage[i] = sum / tempaverage[i];
+            }
+
+            for (int i = 0; i < topX; i++)
+            {
+                highest[i] = 0;
+                for (int o = 0; o < tempaverage.Count(); o++)
+                {
+                    if (tempaverage[o] > tempaverage[highest[i]])
+                    {
+                        highest[i] = o;
+                    }
+                }
+
+                restList.Add(restaurantList[highest[i]]);
+                tempaverage[highest[i]] = -1;
+            }
+            return restList;
+        }
+
+        public List<Restaurant> TopThree(List<Review> reviewList, List<Restaurant> restaurantList)
+        { // top what restrants
+            int topX = 3, sum;
+            double[] tempaverage = new double[restaurantList.Count];
+            int[] highest = new int[topX];
+            List<Restaurant> restList = new List<Restaurant>();
 
             if (topX > restaurantList.Count)
                 topX = restaurantList.Count;

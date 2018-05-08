@@ -15,14 +15,14 @@ namespace Client.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Wide Eyes Sleeping Stomach, independant restaurant review application";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Wide Eyes Sleeping Stomach Contact Information";
 
             return View();
         }

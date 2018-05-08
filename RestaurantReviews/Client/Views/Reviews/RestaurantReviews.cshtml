@@ -1,0 +1,12 @@
+﻿@model IEnumerable<DBEntity.Review>
+
+@{
+    ViewBag.Title = "RestaurantReviews";
+}
+
+<h2>
+    Reviews for @Html.DisplayFor(modelItem => Model.First().Name);
+</h2>
+
+@Html.Partial("Partial", Model);
+

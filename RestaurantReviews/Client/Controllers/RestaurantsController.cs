@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DBEntity;
+using LibraryLogic;
 
 namespace Client.Controllers
 {
@@ -15,9 +16,48 @@ namespace Client.Controllers
         private RestaurantDBEntities db = new RestaurantDBEntities();
 
         // GET: Restaurants
-        public ActionResult Index()
+        //public ActionResult Index()
+        //{
+        //    return View(db.Restaurants.ToList());
+        //}
+        
+        // GET: Restaurants that contain input within name
+        public ActionResult Index(string searchString)
         {
-            return View(db.Restaurants.ToList());
+            var restaurants = from r in db.Restaurants select r;
+
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                restaurants = restaurants.Where(s => s.Name.Contains(searchString));
+            }
+            return View(restaurants.ToList());
+        }
+
+        // GET: Restaurants order by location alphabetically then name
+        public ActionResult LocationOrder()
+        {
+            return View(db.Restaurants.OrderBy(x => new { x.Location, x.Name }).ToList());
+        }
+
+        // GET: Restaurants order by alphabetically descending
+        public ActionResult Descending()
+        {
+            return View(db.Restaurants.OrderByDescending(x=> new { x.Name }).ToList());
+        }
+
+        // GET: Restaurants order by alphabetically
+        public ActionResult Ascending()
+        {
+            return View(db.Restaurants.OrderBy(x => new { x.Name }).ToList());
+        }
+
+        // GET: Restaurant Reviews
+        public ActionResult TopThree()
+        {
+            Library library = new Library();
+            List<Restaurant> topThree = new List<Restaurant>();
+            topThree = library.TopThree(db.Reviews.ToList(), db.Restaurants.ToList());
+            return View(topThree);
         }
 
         // GET: Restaurants/Details/5

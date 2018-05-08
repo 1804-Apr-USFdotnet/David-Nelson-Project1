@@ -1,0 +1,48 @@
+﻿@model IEnumerable<DBEntity.Restaurant>
+
+<p>
+    @Html.ActionLink("Create New", "Create") | Order By:
+    @Html.ActionLink("ID", "Index") |
+    @Html.ActionLink("Location", "LocationOrder") |
+    @Html.ActionLink("Name/Ascending", "Ascending") |
+    @Html.ActionLink("Name/Descending", "Descending") |
+    @Html.ActionLink("Three Highest Rated", "TopThree") 
+</p>
+<form asp-controller="Restaurants" asp-action="Index">
+    <p>
+        Name: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID }) |
+            @Html.ActionLink("Reviews", "RestaurantReviews","Reviews", new { id = item.ID }, new {title = item.Name })
+        </td>
+    </tr>
+}
+
+</table>
