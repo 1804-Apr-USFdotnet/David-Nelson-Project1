@@ -192,3 +192,16 @@ C:\Users\david\Source\Repos\David-Nelson-Project1\RestaurantReviews\Client\bin\D
 C:\Users\david\Source\Repos\David-Nelson-Project1\RestaurantReviews\Client\obj\Release\Client.dll
 C:\Users\david\Source\Repos\David-Nelson-Project1\RestaurantReviews\Client\obj\Release\Client.pdb
 C:\Users\david\Source\Repos\David-Nelson-Project1\RestaurantReviews\Client\bin\App.config
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\App.config
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\DBEntity.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\EntityFramework.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\EntityFramework.SqlServer.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\LibraryLogic.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\MySql.Data.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\MySql.Data.Entity.EF6.dll
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\DBEntity.dll.config
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\LibraryLogic.dll.config
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\EntityFramework.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\EntityFramework.SqlServer.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\MySql.Data.xml
+C:\Users\David\Documents\Revature\David-Nelson-Project1\RestaurantReviews\Client\bin\MySql.Data.Entity.EF6.xml
